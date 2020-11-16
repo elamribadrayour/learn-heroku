@@ -1,14 +1,10 @@
 {
-  "name": "clean-blog",
-  "title": "Clean Blog",
-  "version": "3.3.7+1",
-  "homepage": "http://startbootstrap.com/template-overviews/clean-blog",
-  "author": "Start Bootstrap",
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
-  },
-  "devDependencies": {
+  "name": "mihaigrecipes",
+  "version": "1.0.0",
+  "dependencies": 
+  {
+    "http-server": "^0.9.0",
+    "live-server": "^1.2.0",
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.13.0",
     "font-awesome": "^4.6.3",
@@ -20,8 +16,11 @@
     "gulp-uglify": "^1.5.4",
     "jquery": "^1.11.3"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-clean-blog.git"
+  "engines": {
+    "node": "6.10.x"
+  },
+  "scripts": {
+    "start": "node node_modules/.bin/http-server",
+    "local": "node_modules/.bin/live-server --port=8080"
   }
 }
